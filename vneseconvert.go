@@ -1,7 +1,6 @@
 package vneseconvert
 
 import (
-	"fmt"
 	"sort"
 	"strings"
 )
@@ -109,8 +108,6 @@ func init() {
 	sort.Sort(ByLength(tcvn3))
 	sort.Sort(ByLength(vni))
 	sort.Sort(ByLength(viqr))
-
-	fmt.Println(tcvn3)
 
 	for _, char := range tcvn3 {
 		tcvn3ToUnicode = append(tcvn3ToUnicode, char, TCVN3ToUnicodeMap[char])
